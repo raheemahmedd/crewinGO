@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+
+<html lang="en"  >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crewingo.com</title>
+  <!--Font-Awesome-->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <!-- Arabic Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+  <!--Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!--Stylesheets-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="pre-status">
+      <div class="preload-placeholder"></div>
+    </div>
+  </div>
+  <!-- Navigation -->
+  <header id="menu">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="col-auto px-0">
+              <a class="navbar-brand" href="#menu">
+                <img class="logo" width="120" height="30" src="images/Logo/crewingo-02.svg" alt="">
+              </a>
+            </div>
+            <div class="col px-md-0">
+              <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarNav" aria-controls="navbarNav"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <!-- English -->
+                <ul class="navbar-nav lang-en">
+                  <li class="nav-item">
+                    <a class="nav-link scroll active" href="#slider">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#about">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#service">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#pricing">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item"><button class="button1 border-0 ms-2">Login</button> </li>
+                  <li class="nav-item"><button class="button1 border-0 ms-3">Free Trial</button> </li>
+                  <li class="nav-item">
+                    <button class="nav-link lang-btn" onclick="changeLang()">AR</button>
+                  </li>
+                </ul>
+                <!-- Arabic -->
+                <ul class="navbar-nav lang-ar px-0 d-none">
+                  <li class="nav-item">
+                    <a class="nav-link scroll active" aria-current="page" href="#menu">الصفحة الرئيسية</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#about">منصتنا</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#service">خدماتنا</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#pricing">باقاتنا</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#contact">تواصل معنا</a>
+                  </li>
+                  <li class="nav-item"><button class="button1 border-0 me-2">التسجيل</button> </li>
+                  <li class="nav-item"><button class="button1 border-0 me-3">تجربة مجانية</button> </li>
+                  <li class="nav-item">
+                    <button class="nav-link lang-btn" onclick="changeLang()">EN</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Slider -->
+  <section id="slider">
+    <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item item active" data-bs-interval="5000">
+          <div class="item-bg" id="banner1"></div>
+          <div class="carousel-caption container">
+            <div class="row justify-content-start">
+              <!-- English -->
+              <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 lang-en">
+                <h1>Cloud based hr Services</h1>
+                <h2>With CREWINGO</h2>
+                <p class="mb-3"><i class="fa fa-cog"></i> Collect and store your employee data</p>
+                <p class="mb-3"><i class="fa fa-cog"></i> Keep your business running smoothly</p>
+                <p class="mb-3"><i class="fa fa-cog"></i> Simplify your day-to-day tasks</p>
+                <p class="xl"> <strong><b>Focus on what really matters... driving your business to new horizons.</b></strong></p>
+              </div>
+              <!-- Arabic -->
+              <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 lang-ar d-none">
+                <h1>
+                  حلول سحابية لخدمات الموارد البشرية
+                </h1>
+                <h2>مع كروينجو</h2>
+                <p class="mb-3"><i class="fa fa-cog"></i>	تستطيع جمع وحفظ بيانات الموظفين.</p>
+                <p class="mb-3"><i class="fa fa-cog"></i> 	متابعة سير الاعمال بسلاسة.</p>
+                <p class="mb-3"><i class="fa fa-cog"></i> تبسيط مهامك اليومية.
+                </p>
+                <p class="xl"> <strong><b>الان يمكنك التركيز على ما هو أهم ... لفتح آفاق جديدة لشركتك.</b></strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item item" data-bs-interval="5000">
+          <div class="item-bg" id="banner2"></div>
+          <div class="carousel-caption container">
+            <div class="row justify-content-start">
+              <!-- English -->
+              <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 lang-en">
+                <h1>Overcoming business obstacles</h1>
+                <h2>With CREWINGO</h2>
+                
+                <p class="h">
+                  Hiring, onboarding, managing time-<br>
+                  off requests, and even building the company<br>calendar will be effortless.
+                </p>
+              </div>
+              <!-- Arabic -->
+              <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 lang-ar d-none">
+                <h1>التغلب على تحديات تسيير الاعمال</h1>
+                <h2>مع كروينجو </h2>
+                <p class="h">
+                  حلول سهلة وسلسة لإدارة إجراءات التوظيف والاجازات ومتابعة اعمال الموظفين. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item item" data-bs-interval="5000">
+          <div class="item-bg" id="banner3"></div>
+          <div class="carousel-caption container">
+            <div class="row justify-content-start">
+              <!-- English -->
+              <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 px-lg-0 lang-en">
+                <h1>Who can benfit from our Services?</h1>
+                <h2 class="line-height-1">CREWINGO serves</h2>
+                <p class="mb-3"><i class="fa fa-cog"></i> Small or medium sized Businesses</p>
+                <p class="mb-3"><i class="fa fa-cog"></i> HR professionals</p>
+                <p class="mb-3"><i class="fa fa-cog"></i> CEOs and CFOs all over Egypt</p>
+                <p class="xl">
+                <strong>CREWINGO will help you create a great workspace, all</strong><br>
+                  <span class="just-click">JUST A CLICK AWAY</span>
+                </p>
+              </div>
+              <!-- Arabic -->
+              <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 px-lg-0 lang-ar d-none">
+                <h1>المستفيدين من حلول كروينجو</h1>
+                <h2 class="line-height-1"></h2>
+                <p class="mb-3"><i class="fa fa-cog"></i>	الشركات والمشاريع الصغيرة والمتوسطة.</p>
+                <p class="mb-3"><i class="fa fa-cog"></i>	رواد الاعمال الناشئة.</p>
+                <p class="mb-3"><i class="fa fa-cog"></i>	موظفي ومديري الموارد البشرية والمالية.</p>
+                <p class="xl">
+                  <strong><b> كروينجو سيساعدك على خلق بيئة عمل متناغمة.</b></strong><br>
+                <strong> <span class="just-click">كل هذا من خلال حلول سحابية سهلة.</span></strong> 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev home-carousel-left" data-bs-target="#home-carousel" data-bs-slide="prev">
+        <i class="fa fa-angle-left"></i>
+      </a>
+      <a class="carousel-control-next home-carousel-right" data-bs-target="#home-carousel" data-bs-slide="next">
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- English -->
+        <div class="col-lg-8 col-md-10 lang-en mt-5">
+          <div class="heading pt-4">
+            <h2>ABOUT <span>US</span></h2>
+            <div class="line"></div>
+            <p>
+              <span><strong>CREWINGO</strong></span>'s cloud-based HR platform is built with small and medium
+              business in mind. Intuitive and designed to automate administrative work, engage your employees and
+              free time to concentrate on what is really important... <b class="siz">drive your business to new horizons with
+             <span>Just a click away.</span></b> 
+            </p>
+          </div>
+        </div>
+        <!-- Arabic -->
+        <div class="col-lg-8 col-md-10 mt-5 lang-ar d-none">
+          <div class="heading py-3">
+            <h2><span>منصتنا</span></h2>
+            <div class="line"></div>
+            <p>
+            تقدم منصة  <span>كروينجو </span>السحابية حلول مخصصة للشركات الصغيرة والمتوسطة. وقد تم تطوريها لميكنة تسيير الاعمال اليومية واشراك الموظفين في ادارتها ومتابعتها لتوفير وقتك للتركيز على ما هو أهم...
+              
+              <b class="siz">لدفع شركتك إلى اّفاق جديدة.</b>
+              <b class="siz"><span></span></b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center flex-row-reverse mb-3 ab-sec business-grow">
+        <div class="col-lg-6 col-sm-12 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <img class="w-100" src="images/aboutus.jpg" alt="">
+        </div>
+        <!-- English -->
+        <div class="col-lg-6 col-sm-12 lang-en">
+          <h3 class="wow fadeInDown" data-wow-duration="1000ms"
+              data-wow-delay="300ms">
+            We Help Your Business <span>Grow</span>
+          </h3>
+          <p>
+            The most successful companies are constantly seeking for ways to improve,
+            whether it's by providing better products or implementing more efficient processes.
+            With <span>CREWINGO</span> you’ll be taking your company to the next level,
+            from on-boarding new employees to managing your company assets, we’ve got you covered.
+          </p>
+        </div>
+        <!-- Arabic -->
+        <div class="col-lg-6 col-sm-12 lang-ar d-none">
+          <h3 class="wow fadeInDown" data-wow-duration="1000ms"
+              data-wow-delay="300ms">
+            نحن نساعد عملك على <span>النمو</span>
+          </h3>
+          <p>
+            تسعى أنجح الشركات باستمرار إلى طرق للتحسين، سواء كان ذلك بتوفير منتجات أفضل أو تنفيذ عمليات أكثر كفاءة
+            سوف تأخذ شركتك إلى المستوى التالي،
+            مع <span><strong>كروينجو</strong></span>
+            بدءًا من تعيين موظفين جدد إلى إدارة أصول شركتك، سنغطي جميع احتياجاتك .
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-sec">
+      <div class="container">
+        <!-- English -->
+        <div class="row py-3 align-items-center lang-en">
+          <div class="col-md-6 col-sm-12">
+            <h3 class="">Check it out now</h3>
+          </div>
+          <div class="col-md-6 col-sm-12 text-end">
+            <a class="btn" href="#">Free trial</a>
+            <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Request Demo
+            </a>
+          </div>
+        </div>
+        <!-- Arabic -->
+        <div class="row py-4 align-items-center lang-ar d-none">
+          <div class="col-md-6 col-sm-12">
+            <h3 class="lang-ar d-none">اكتشف المزيد</h3>
+          </div>
+          <div class="col-md-6 col-sm-12 text-end">
+            <a class="btn" href="#">تجربة مجانية</a>
+            <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              طلب عرض
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Service -->
+  <section id="service" class="pt-5">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <!-- English -->
+        <div class="col-md-8 lang-en mt-4">
+          <div class="heading">
+            <h2>OUR <span>SERVICE</span></h2>
+            <div class="line"></div>
+          </div>
+        </div>
+        <!-- Arabic -->
+        <div class="col-md-8 lang-ar d-none mt-4">
+          <div class="heading">
+            <h2><span>خدماتنا</span></h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+          <div class="row media">
+            <div class="col-auto service-box"> <i class="fa fa-users"></i> </div>
+            <!-- English -->
+            <div class="col media-body lang-en">
+              <h5 class="media-heading">Employee Records</h5>
+              <p>
+                <i class="fa fa-cog"></i>
+                Have all your employee records securely in one place, accessible from
+                anywhere 24/7, 365 days a year.
+              </p>
+            </div>
+            <!-- Arabic -->
+            <div class="col media-body lang-ar d-none">
+              <h5 class="media-heading">إدارة بيانات الموظفين</h5>
+              <p><i class="fa fa-cog"></i>
+                سجل واحتفظ بجميع بيانات موظفيك بأمان، ويمكنك الوصول إليها بسهولة في أي وقت على مدار الساعة.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+          <div class="row media">
+            <div class="col-auto service-box"> <i class="fa fa-file-text"></i> </div>
+            <!-- English -->
+            <div class="col media-body lang-en">
+              <h5 class="media-heading">Reporting </h5>
+              <p><i class="fa fa-cog"></i>
+                 Access instant, detailed HR reports<br>
+                 <i class="fa fa-cog"></i> Analyse your HR data, be proactive and back up your decisions with confidence
+              </p>
+            </div>
+            <!-- Arabic -->
+            <div class="col media-body lang-ar d-none">
+              <h5 class="media-heading">التقارير </h5>
+              <p><i class="fa fa-cog"></i>
+                عمل تقارير فورية لمتابعة الموظفين.<br>
+                 <i class="fa fa-cog"></i>عرض و تحليل بيانات الموظفين بطريقة سلسة لدعم اتخاذ القرارات.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+          <div class="row media">
+            <div class="col-auto service-box"> <i class="fa fa-suitcase"></i> </div>
+            <!-- English -->
+            <div class="col media-body lang-en">
+              <h5 class="media-heading">Time off management </h5>
+              <p>
+                <i class="fa fa-cog"></i>
+                Leave paper and Excel Sheets behind and manage your time-off process online<br>
+                <i class="fa fa-cog"></i>
+                Easy to use time off system customised with a few clicks<br>
+                <i class="fa fa-cog"></i>
+                All requests go straight to the right people who can approve or decline with just one click
+              </p>
+            </div>
+            <!-- Arabic -->
+            <div class="col media-body lang-ar d-none">
+              <h5 class="media-heading">إدارة ومتابعة الاجازات</h5>
+              <p>
+                <i class="fa fa-cog"></i>
+                	اترك الطرق الورقية وملفات الاكسيل وقم بإدارة ومتابعة اجازات الموظفين عن طريق الانترنت.
+                <br>
+                <i class="fa fa-cog"></i>
+                	نظام سهل الإعداد والاستخدام لإدارة الاجازات.
+                <br>
+                <i class="fa fa-cog"></i>
+                	ارسال طلبات الاجازة للأشخاص المعنيين واعتمادها بضغطة واحدة من أي مكان.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+          <div class="row media">
+            <div class="col-auto service-box"> <i class="fa fa-calendar"></i> </div>
+            <!-- English -->
+            <div class="col media-body lang-en">
+              <h5 class="media-heading">Company Calendar</h5>
+              <p>
+                <i class="fa fa-cog"></i>
+                Have full visibility and oversight of your company<br>
+                <i class="fa fa-cog"></i>
+                Company Calendar is updated automatically and accounts for any changes
+              </p>
+            </div>
+            <!-- Arabic -->
+            <div class="col media-body lang-ar d-none">
+              <h5 class="media-heading">تقويم الشركة</h5>
+              <p>
+                <i class="fa fa-cog"></i>
+                خاصية لمتابعة الموظفين لتعطيك رؤية أوضح و تخطيط أفضل لسير العمل
+                .<br>
+                <i class="fa fa-cog"></i>
+                تحديث كل البيانات تلقائيا.
+               
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+          <div class="row media">
+            <div class="col-auto service-box"> <i class="fa fa-archive"></i> </div>
+            <!-- English -->
+            <div class="col media-body lang-en">
+              <h5 class="media-heading">Document storage and management</h5>
+              <p><i class="fa fa-cog"></i>
+                 Store all your important documents safely and set up reminders before they expire.
+                You will never miss renewal dates
+              </p>
+            </div>
+            <!-- Arabic -->
+            <div class="col media-body lang-ar d-none">
+              <h5 class="media-heading">حفظ وإدارة المستندات </h5>
+              <p><i class="fa fa-cog"></i>
+                حفظ المستندات الهامة بأمان مع خاصية التنبيهات بمواعيد التجديد والانتهاء.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+          <div class="row media">
+            <div class="col-auto service-box"> <i class="fa fa-list-alt"></i> </div>
+            <!-- English -->
+            <div class="col media-body lang-en">
+              <h5 class="media-heading">Asset Register</h5>
+              <p><i class="fa fa-cog"></i>
+                 Manage and keep track of your company assets. Be in control and have full visibility at any time of the day
+              </p>
+            </div>
+            <!-- Arabic -->
+            <div class="col media-body lang-ar d-none">
+              <h5 class="media-heading">سجل الأصول</h5>
+              <p><i class="fa fa-cog"></i>
+                تسجيل أصول الشركة ومتابعة حالتها وحركتها بين الإدارات والموظفين في أي وقت ومن أي مكان.
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+          <div class="row media">
+            <div class="col-auto service-box"> <i class="fa fa-envelope"></i> </div>
+            <!-- English -->
+            <div class="col media-body lang-en">
+              <h5 class="media-heading">Email alerts</h5>
+              <p><i class="fa fa-cog"></i>
+                Receive email alerts and never miss important actions
+              </p>
+            </div>
+            <!-- Arabic -->
+            <div class="col media-body lang-ar d-none">
+              <h5 class="media-heading">إشعارت البريد الإلكتروني</h5>
+              <p><i class="fa fa-cog"></i>
+                تلقي التنبيهات والاشعارات المهمة الخاصة بسير العمل عن طريق البريد الإلكتروني.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pricing -->
+  <section id="pricing" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <!-- English -->
+        <div class="col-md-8 lang-en mt-4">
+          <div class="heading">
+            <h2>Our <span>Packages</span></h2>
+            <div class="line"></div>
+          </div>
+        </div>
+        <!-- Arabic -->
+        <div class="col-md-8 lang-ar d-none mt-4">
+          <div class="heading">
+            <h2><span>باقتنا</span></h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-6 col-sm-12">
+          <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+            <!-- English -->
+            <ul class="pricing lang-en">
+              <li class="plan-header">
+                <div class="price-duration">
+                  <div class="price"> 10 EGP</div>
+                  <div class="duration"> per Month per Employee </div>
+                </div>
+                <div class="plan-name"> Enjoy our full platform for your active employees </div>
+              </li>
+              <li><strong>Employee Records</strong></li>
+              <li><strong>Reporting</strong></li>
+              <li><strong>Time off management</strong></li>
+              <li><strong>Company Calendar</strong></li>
+              <li><strong>Document storage and management</strong></li>
+
+              <li><strong>Asset Register</strong></li>
+              <li><strong>Email alerts</strong></li>
+              <li class="pb-4"><a class="btn-order" href="#">FREE TRIAL</a> </li>
+            </ul>
+            <!-- Arabic -->
+            <ul class="pricing lang-ar d-none">
+              <li class="plan-header">
+                <div class="price-duration">
+                  <div class="price"> 10 ج.م.</div>
+                  <div class="duration">  فى الشهر للموظف </div>
+                </div>
+                <div class="plan-name">استمتع بمنصتنا المتكاملة لموظفيك.</div>
+              </li>
+              <li><strong>إدارة بيانات الموظفين</strong></li>
+              <li><strong>التقارير</strong></li>
+              <li><strong>إدارة ومتابعة الاجازات</strong></li>
+              <li><strong>تقويم الشركة</strong></li>
+              <li><strong>حفظ وإدارة المستندات</strong></li>
+
+              <li><strong>سجل الأصول</strong></li>
+              <li><strong>اشعارات البريد الإلكتروني</strong></li>
+              <li class="pb-4"><a class="btn-order" href="#">جرب مجاناً</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- English -->
+        <div class="col-md-8 lang-en mt-5">
+          <div class="heading">
+            <h2>CONTACT <span>US</span></h2>
+            <div class="line"></div>
+            <p></p>
+          </div>
+        </div>
+        <!-- Arabic -->
+        <div class="col-md-8 lang-ar d-none mt-5">
+          <div class="heading">
+            <h2>تواصل <span>معنا</span></h2>
+            <div class="line"></div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 contact-sec-1">
+          <!-- English -->
+          <h4 class="lang-en">CONTACT <span>INFO</span></h4>
+          <ul class="contact-form pb-4 lang-en">
+           
+            <li>
+              <i class="fa fa-envelope"></i>
+              <h6><strong>Mail Us:</strong> <a href="#">info@crewingo.com</a></h6>
+            </li>
+           
+            <li>
+              <i class="fa fa-wechat"></i>
+              <h6><strong>Website:</strong> <a href="#">www.crewingo.com</a> </h6>
+            </li>
+          </ul>
+          <!-- Arabic -->
+          <h4 class="lang-ar d-none">معلومات <span>التواصل</span></h4>
+          <ul class="contact-form pb-4 lang-ar d-none">
+            
+            <li>
+              <i class="fa fa-envelope"></i>
+              <h6><strong>راسلنا:</strong> <a href="#">info@crewingo.com</a></h6>
+            </li>
+            
+            <li>
+              <i class="fa fa-wechat"></i>
+              <h6><strong>الموقع الإلكتروني:</strong> <a href="#">www.crewingo.com</a> </h6>
+            </li>
+          </ul>
+        </div>
+        <!-- Message Form -->
+        <div class="col-lg-6 col-sm-12">
+          <form id="main-contact-form" name="contact-form" method="post" action="#">
+            <div class="row wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="col-lg-6 col-sm-12 name-input">
+                <!-- English -->
+                <div class="form-group lang-en">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+                </div>
+                <!-- Arabic -->
+                <div class="form-group lang-ar d-none">
+                  <input type="text" name="name" class="form-control" placeholder="الإسم" required="required">
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 email-input">
+                <!-- English -->
+                <div class="form-group lang-en">
+                  <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+                </div>
+                <!-- Arabic -->
+                <div class="form-group lang-ar d-none">
+                  <input type="email" name="email" class="form-control" placeholder="البريد الإلكتروني" required="required">
+                </div>
+              </div>
+            </div>
+            <!-- English -->
+            <div class="form-group lang-en">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+            </div>
+            <!-- Arabic -->
+            <div class="form-group lang-ar d-none">
+              <input type="text" name="subject" class="form-control" placeholder="الموضوع" required="required">
+            </div>
+            <!-- English -->
+            <div class="form-group lang-en">
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
+            </div>
+            <!-- Arabic -->
+            <div class="form-group lang-ar d-none">
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="ادخل رسالتك" required="required"></textarea>
+            </div>
+            <!-- English -->
+            <a class="btn-send d-flex justify-content-center lang-en" href="#">Send Now</a>
+            <!-- Arabic -->
+            <a class="btn-send d-flex justify-content-center lang-ar d-none" href="#">ارسل الاّن</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 footer-item">
+          <h4 class="lang-en">Products</h4>
+          <h4 class="lang-ar d-none">خدماتنا</h4>
+          <!-- English -->
+          <ul class="menu-list ps-4 lang-en">
+            <li><a href="#">Free trial</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Book a demo</a></li>
+          </ul>
+          <!-- Arabic -->
+          <ul class="menu-list ps-4 lang-ar d-none">
+            <li><a href="#">تجربة مجانية</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">احجز عرضًا</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 footer-item">
+          <!-- English -->
+          <h4 class="lang-en">About CREWINGO</h4>
+          <ul class="menu-list ps-4 lang-en">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+          <!-- Arabic -->
+          <h4 class="lang-ar d-none">عن كروينجو</h4>
+          <ul class="menu-list ps-4 lang-ar d-none">
+            <li><a href="#about">منصتنا</a></li>
+            <li><a href="#service">خدماتنا</a></li>
+            <li><a href="#pricing">باقاتنا</a></li>
+            <li><a href="faq.html">الأسئلة المتكررة</a></li>
+            <li><a href="#">وظائف</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 footer-item">
+          <h4 class="lang-en">Get in touch</h4>
+          <h4 class="lang-ar d-none">ابقى على تواصل</h4>
+          <ul class="menu-list ps-4">
+            <li class="get-in-touch">
+              <i class="fa fa-envelope"></i>
+              <a href="#">info@crewingo.com</a>
+            </li>
+            <li class="get-in-touch">
+              Eravo Ltd, United Kingdom.
+            </li>
+          </ul>
+          <!-- Arabic -->
+          <ul class="social-icons px-0 pb-4">
+            <li><a rel="nofollow" href="https://www.facebook.com/Crewingo" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/crewingo"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            Eravo Ltd is a company registered in England and Wales number 13226768
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- English -->
+          <h5 class="modal-title lang-en" id="exampleModalLabel">Request Form</h5>
+          <!-- Arabic -->
+          <h5 class="modal-title lang-ar d-none" id="exampleModalLabel">نموذج طلب</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="main-contact-form" name="contact-form" method="post" action="#">
+            <div>
+              <!-- English -->
+              <div class="form-group lang-en">
+                <input type="text" name="companyName" class="form-control" placeholder="Company Name" required="required">
+              </div>
+              <!-- Arabic -->
+              <div class="form-group lang-ar d-none">
+                <input type="text" name="companyName" class="form-control" placeholder="إسم الشركة" required="required">
+              </div>
+            </div>
+            <div>
+              <!-- English -->
+              <div class="form-group lang-en">
+                <select name="industry" class="form-control form-select" required="required">
+                  <option class="text-muted" hidden>Choose Industry</option>
+                  <option>Agriculture and Land Reclamation</option>
+                  <option>Automotive</option>
+                  <option>Building Materials</option>
+                  <option>Chemical </option>
+                  <option>Communication and Information Technology</option>
+                  <option>Education</option>
+                  <option>Electricity and Renewable Energy</option>
+                  <option>Engineering and Electronics </option>
+                  <option>Financial and Insurance Services</option>
+                  <option>Food Processing</option>
+                  <option>
+                    Healthcare
+                  </option>
+                  <option>
+                    Leather
+                  </option>
+                  <option>
+                    Metalurgical
+                  </option>
+                  <option>
+                    Mining
+                  </option>
+                  <option>
+                    Oil and Gas
+                  </option>
+                  <option>
+                    Packing and Packaging
+                  </option>
+                  <option>
+                    Petrochemicals
+                  </option>
+                  <option>
+                    Pharmaceutical and Medical
+                  </option>
+                  <option>
+                    Real Estate
+                  </option>
+                  <option>
+                    Retail
+                  </option>
+                  <option>
+                    Textile
+                  </option>
+                  <option>
+                    Tourism
+                  </option>
+                  <option>
+                    Transportation and Logistics
+                  </option>
+                  <option>
+                    Wood and Furniture
+                  </option>
+                  <option>
+                    Other
+                  </option>
+                </select>
+              </div>
+              <!-- Arabic -->
+              <div class="form-group lang-ar d-none">
+                <select name="industry" class="form-control form-select" required="required">
+                  <option class="text-muted" hidden>إختار الصناعة</option>
+                  <option>
+                    الزراعة واستصلاح الأراضي
+                  </option>
+                  <option>
+                    السيارات
+                  </option>
+                  <option>
+                    مواد بناء
+                  </option>
+                  <option>
+                    المواد الكيميائية
+                  </option>
+                  <option>
+                    تكنولوجيا الاتصالات والمعلومات
+                  </option>
+                  <option>
+                    تعليم
+                  </option>
+                  <option>
+                    الكهرباء والطاقة المتجددة
+                  </option>
+                  <option>
+                    الهندسة والالكترونيات
+                  </option>
+                  <option>
+                    الخدمات المالية والتأمين
+                  </option>
+                  <option>
+                    معالجة الغذاء
+                  </option>
+                  <option>
+                    الرعاىة الصحية
+                  </option>
+                  <option>
+                    جلد
+                  </option>
+                  <option>
+                    ميتالورجيكال
+                  </option>
+                  <option>
+                    التعدين
+                  </option>
+                  <option>
+                    النفط والغاز
+                  </option>
+                  <option>
+                    التعبئة والتغليف
+                  </option>
+                  <option>
+                    البتروكيماويات
+                  </option>
+                  <option>
+                    الأدوية والطبية
+                  </option>
+                  <option>
+                    العقارات
+                  </option>
+                  <option>
+                    التجزئه
+                  </option>
+                  <option>
+                    الغزل والنسيج
+                  </option>
+                  <option>
+                    السياحة
+                  </option>
+                  <option>
+                    النقل والخدمات اللوجستية
+                  </option>
+                  <option>
+                    الخشب والأثاث
+                  </option>
+                  <option>آخر</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <!-- English -->
+              <div class="form-group lang-en">
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+              </div>
+              <!-- Arabic -->
+              <div class="form-group lang-ar d-none">
+                <input type="email" name="email" class="form-control" placeholder="البريد الإلكتروني" required="required">
+              </div>
+            </div>
+            <!-- English -->
+            <div class="form-group lang-en">
+              <input type="number" name="mobile-number" class="form-control" placeholder="Mobile Number" required="required">
+            </div>
+            <!-- Arabic -->
+            <div class="form-group lang-ar d-none">
+              <input type="number" name="mobile-number" class="form-control" placeholder="رقم الهاتف" required="required">
+            </div>
+            <div class="mb-3">
+              <!-- English -->
+              <div class="lang-en">
+                <h5>Where did you hear about us?</h5>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="facebook" id="facebook">
+                  </div>
+                  <div class="col">Facebook</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="linkedIn" id="linkedIn">
+                  </div>
+                  <div class="col">LinkedIn</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="referral" id="referral">
+                  </div>
+                  <div class="col">Referral</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="google" id="google">
+                  </div>
+                  <div class="col">Google/Search Engine</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="other" id="other">
+                  </div>
+                  <div class="col">Other (please specify)</div>
+                </div>
+              </div>
+              <!-- Arabic -->
+              <div class="lang-ar d-none">
+                <h4>أين سمعت عنا؟</h4>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="facebook" id="facebook">
+                  </div>
+                  <div class="col">الفيسبوك</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="linkedIn" id="linkedIn">
+                  </div>
+                  <div class="col">لينكدين</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="referral" id="referral">
+                  </div>
+                  <div class="col">الإحالة</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="google" id="google">
+                  </div>
+                  <div class="col">جوجل / محرك البحث</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="other" id="other">
+                  </div>
+                  <div class="col">غير ذلك (يرجى التحديد)</div>
+                </div>
+              </div>
+            </div>
+            <!-- English -->
+            <div class="form-group lang-en">
+              <textarea name="comment" id="comment" class="form-control"
+                        rows="4" placeholder="Your Comment" required="required"></textarea>
+            </div>
+            <!-- Arabic -->
+            <div class="form-group lang-ar d-none">
+              <textarea name="comment" id="comment" class="form-control"
+                        rows="4" placeholder="تعليقك" required="required"></textarea>
+            </div>
+            <!-- English -->
+            <div class="modal-footer px-0 lang-en">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn-send-2">Send Now</button>
+            </div>
+            <!-- Arabic -->
+            <div class="modal-footer px-0 lang-ar d-none">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">إغلاق</button>
+              <button type="button" class="btn-send-2">ارسل الاّن</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Jquery-->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!--Boostrap-Jquery-->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!--Wow-Jquery-->
+  <script type="text/javascript" src="js/wow.js"></script>
+  <!--Main-Scripts-->
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

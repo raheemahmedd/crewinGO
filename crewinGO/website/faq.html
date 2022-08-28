@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/faq.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Frequently Asked Questions | Crewingo</title>
+  <!--Stylesheets-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Font-Awesome-->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <!--Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!--Stylesheets-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 2.5rem;
+      font-family: poppins;
+    }
+
+    .accordion {
+      font-family: poppins;
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    .accordion-item {
+      font-family: poppins;
+      background-color: #fff;
+      color: #111;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+    }
+
+    .accordion-item-header {
+      font-family: poppins;
+      padding: 0.5rem 3rem 0.5rem 1rem;
+      line-height: 1.4rem;
+      font-weight: bold;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+    }
+
+      .accordion-item-header::after {
+        content: "\002B";
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        font-family: poppins;
+        top: 50%;
+        transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+      }
+
+      .accordion-item-header.active::after {
+        content: "\2212";
+        font-family: poppins;
+      }
+
+    .accordion-item-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      font-family: poppins;
+    }
+
+    .accordion-item-body-content {
+      padding: 1rem;
+      line-height: 1.5rem;
+      border-top: 1px solid;
+      border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+      font-family: poppins;
+    }
+
+    #faq {
+      margin-top: 50px;
+    }
+
+    #faq-home:active {
+      /* color: #4ab74b; */
+      background: transparent;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+  <!--Preloader-->
+  <div id="preloader">
+    <div id="pre-status">
+      <div class="preload-placeholder"></div>
+    </div>
+  </div>
+  <!-- Navigation -->
+  <header id="menu">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="col-auto px-0">
+              <a class="navbar-brand" href="index.html#menu">
+                <img class="logo" width="120" height="30" src="images/Logo/crewingo-02.svg" alt="">
+              </a>
+            </div>
+            <div class="col px-md-0">
+              <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarNav" aria-controls="navbarNav"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <!-- English -->
+                <ul class="navbar-nav lang-en">
+                  <li class="nav-item">
+                    <a class="nav-link active scroll" aria-current="page" href="index.html#menu">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="index.html#about">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="index.html#service">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="index.html#pricing">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="index.html#contact">Contact</a>
+                  </li>
+                  <li class="nav-item"><button class="button1 border-0 ms-2">Login</button> </li>
+                  <li class="nav-item"><button class="button1 border-0 ms-3">Free Trial</button> </li>
+                  <li class="nav-item">
+                    <button class="nav-link lang-btn" onclick="changeLang()">AR</button>
+                  </li>
+                </ul>
+                <!-- Arabic -->
+                <ul class="navbar-nav lang-ar px-0 d-none">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#menu">الصفحة الرئيسية</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#about">منصتنا </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#service">خدماتنا</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#pricing">باقاتنا</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">تواصل معنا</a>
+                  </li>
+                  <li class="nav-item"><button class="button1 border-0 me-2">التسجيل</button> </li>
+                  <li class="nav-item"><button class="button1 border-0 me-3">تجربة مجانية</button> </li>
+                  <li class="nav-item">
+                    <button class="nav-link lang-btn" onclick="changeLang()">EN</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- FAQ -->
+  <section id="about">
+    <div class="container">
+      <div class="row justify-content-between pt-5">
+        <!-- English -->
+        <div class="col-md-8 lang-en">
+          <div class="heading" id="faq">
+            <h2 style="text-align: center;">FAQ</h2>
+            <p></p>
+          </div>
+        </div>
+        <!-- Arabic -->
+        <div class="col-md-8 lang-ar d-none">
+          <div class="heading" id="faq">
+            <h2 style="text-align: center;">الأسئلة المتكررة</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="row flex-row-reverse ab-sec">
+        <div class="col-md-6 col-sm-12 wow fadeInUp"
+             data-wow-duration="1000ms" data-wow-delay="300ms">
+          <img class="abc-img-bg w-100" src="images/faq.jpg" alt="">
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <!-- English -->
+          <h3 class="lang-en wow fadeInDown" data-wow-duration="1000ms"
+              data-wow-delay="300ms">
+            Frequently Asked <span>Questions </span>
+          </h3>
+          <div class="accordion lang-en">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                What does<span>&nbsp;CREWINGO&nbsp;</span>do?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <span>&nbsp;CREWINGO&nbsp;</span> is a cloud based human resources management platform designed to collect and organise all your employee related information.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                Who does<span>&nbsp;CREWINGO&nbsp;</span>serve?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <span>&nbsp;CREWINGO&nbsp;</span> is built with small and medium sized company in mind.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                How long does it take to setup <span>CREWINGO</span>?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  Less than a minute. Once you complete the two step registration process you are in and ready to go. Everything is in place and you can start onboarding your employees.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                What can I do in <span>CREWINGO</span>
+                during the free trial period?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  You get access to the full platform during the trial period, no restrictions!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                How am I charged?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  You are charged monthly per number of active employees. Simple!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                What is the cancellation policy?
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  You can cancel your<span>&nbsp;CREWINGO&nbsp;</span>account at any time. Your account will remain active until the end of the monthly billing cycle and you will not be charged further. You will never be charged if you have cancelled during the free trial period.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Arabic -->
+          <h3 class="lang-ar d-none wow fadeInDown" data-wow-duration="1000ms"
+              data-wow-delay="300ms">
+            الأسئلة <span> المتكررة</span>
+          </h3>
+          <div class="accordion lang-ar d-none">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                ماذا يفعل <span> كروينجو</span>؟
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <span>كروينجو</span> هي منصة لإدارة الموارد البشرية قائمة على السحابة الإلكترونية مصممة لجمع وتنظيم كل المعلومات المتعلقة بموظفيك.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                من يخدم <span>كروينجو</span>؟
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  تم بناء <span>كروينجو</span> مع وضع شركة صغيرة ومتوسطة الحجم في الاعتبار.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                كم من الوقت يستغرق إعداد <span> كروينجو</span>؟
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  أقل من دقيقة. بمجرد الانتهاء من خطوتين عملية التسجيل أنت جاهز. كل شيء في مكانه ويمكنك البدء في تسجيل موظفيك.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                ماذا يمكنني أن أفعل في <span>كروينجو</span> خلال الفترة التجريبية المجانية؟
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  يمكنك الوصول إلى النظام الأساسي الكامل خلال الفترة التجريبية ، بدون قيود!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                كيف تتم محاسبتي؟
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  يتم محاسبتك شهريًا على عدد الموظفين النشطين. بسيط!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                ما هي سياسة الإلغاء؟
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  يمكنك إلغاء حساب <span>كروينجو</span> الخاص بك في أي وقت. سيظل حسابك نشطًا حتى نهاية دورة الفتورة الشهرية ولن يتم تحصيل رسوم إضافية منك. لن يتم محاسبتك أبدًا إذا قمت بالإلغاء خلال الفترة التجريبية المجانية.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 footer-item">
+          <h4 class="lang-en">Products</h4>
+          <h4 class="lang-ar d-none">منتجاتنا</h4>
+          <!-- English -->
+          <ul class="menu-list ps-4 lang-en">
+            <li><a href="#">Free trial</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Book a demo</a></li>
+          </ul>
+          <!-- Arabic -->
+          <ul class="menu-list ps-4 lang-ar d-none">
+            <li><a href="#">تجربة مجانية</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">احجز عرضًا</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 footer-item">
+          <!-- English -->
+          <h4 class="lang-en">About CREWINGO</h4>
+          <ul class="menu-list ps-4 lang-en">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+          <!-- Arabic -->
+          <h4 class="lang-ar d-none">عن كروينجو</h4>
+          <ul class="menu-list ps-4 lang-ar d-none">
+            <li><a href="#about">منصتنا </a></li>
+            <li><a href="#service">خدماتنا</a></li>
+            <li><a href="#pricing">باقاتنا</a></li>
+            <li><a href="faq.html">الأسئلة المتكررة</a></li>
+            <li><a href="#">وظائف</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 footer-item">
+          <h4 class="lang-en">Get in touch</h4>
+          <h4 class="lang-ar d-none">ابقى على تواصل</h4>
+          <ul class="menu-list ps-4">
+            <li class="get-in-touch">
+              <i class="fa fa-envelope"></i>
+              <a href="#">info@crewingo.com</a>
+            </li>
+            <li class="get-in-touch">
+              Eravo Ltd, United Kingdom.
+            </li>
+          </ul>
+          <!-- Arabic -->
+          <ul class="social-icons px-0 pb-4">
+            <li><a rel="nofollow" href="https://www.facebook.com/Crewingo" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/crewingo"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            Eravo Ltd is a company registered in England and Wales number 13226768
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- English -->
+          <h5 class="modal-title lang-en" id="exampleModalLabel">Request Form</h5>
+          <!-- Arabic -->
+          <h5 class="modal-title lang-ar d-none" id="exampleModalLabel">نموذج طلب</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="main-contact-form" name="contact-form" method="post" action="#">
+            <div>
+              <!-- English -->
+              <div class="form-group lang-en">
+                <input type="text" name="companyName" class="form-control" placeholder="Company Name" required="required">
+              </div>
+              <!-- Arabic -->
+              <div class="form-group lang-ar d-none">
+                <input type="text" name="companyName" class="form-control" placeholder="إسم الشركة" required="required">
+              </div>
+            </div>
+            <div>
+              <!-- English -->
+              <div class="form-group lang-en">
+                <select name="industry" class="form-control form-select" required="required">
+                  <option class="text-muted" hidden>Choose Industry</option>
+                  <option>Agriculture and Land Reclamation</option>
+                  <option>Automotive</option>
+                  <option>Building Materials</option>
+                  <option>Chemical </option>
+                  <option>Communication and Information Technology</option>
+                  <option>Education</option>
+                  <option>Electricity and Renewable Energy</option>
+                  <option>Engineering and Electronics </option>
+                  <option>Financial and Insurance Services</option>
+                  <option>Food Processing</option>
+                  <option>
+                    Healthcare
+                  </option>
+                  <option>
+                    Leather
+                  </option>
+                  <option>
+                    Metalurgical
+                  </option>
+                  <option>
+                    Mining
+                  </option>
+                  <option>
+                    Oil and Gas
+                  </option>
+                  <option>
+                    Packing and Packaging
+                  </option>
+                  <option>
+                    Petrochemicals
+                  </option>
+                  <option>
+                    Pharmaceutical and Medical
+                  </option>
+                  <option>
+                    Real Estate
+                  </option>
+                  <option>
+                    Retail
+                  </option>
+                  <option>
+                    Textile
+                  </option>
+                  <option>
+                    Tourism
+                  </option>
+                  <option>
+                    Transportation and Logistics
+                  </option>
+                  <option>
+                    Wood and Furniture
+                  </option>
+                  <option>
+                    Other
+                  </option>
+                </select>
+              </div>
+              <!-- Arabic -->
+              <div class="form-group lang-ar d-none">
+                <select name="industry" class="form-control form-select" required="required">
+                  <option class="text-muted" hidden>إختار الصناعة</option>
+                  <option>
+                    الزراعة واستصلاح الأراضي
+                  </option>
+                  <option>
+                    السيارات
+                  </option>
+                  <option>
+                    مواد بناء
+                  </option>
+                  <option>
+                    المواد الكيميائية
+                  </option>
+                  <option>
+                    تكنولوجيا الاتصالات والمعلومات
+                  </option>
+                  <option>
+                    تعليم
+                  </option>
+                  <option>
+                    الكهرباء والطاقة المتجددة
+                  </option>
+                  <option>
+                    الهندسة والالكترونيات
+                  </option>
+                  <option>
+                    الخدمات المالية والتأمين
+                  </option>
+                  <option>
+                    معالجة الغذاء
+                  </option>
+                  <option>
+                    الرعاىة الصحية
+                  </option>
+                  <option>
+                    جلد
+                  </option>
+                  <option>
+                    ميتالورجيكال
+                  </option>
+                  <option>
+                    التعدين
+                  </option>
+                  <option>
+                    النفط والغاز
+                  </option>
+                  <option>
+                    التعبئة والتغليف
+                  </option>
+                  <option>
+                    البتروكيماويات
+                  </option>
+                  <option>
+                    الأدوية والطبية
+                  </option>
+                  <option>
+                    العقارات
+                  </option>
+                  <option>
+                    التجزئه
+                  </option>
+                  <option>
+                    الغزل والنسيج
+                  </option>
+                  <option>
+                    السياحة
+                  </option>
+                  <option>
+                    النقل والخدمات اللوجستية
+                  </option>
+                  <option>
+                    الخشب والأثاث
+                  </option>
+                  <option>آخر</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <!-- English -->
+              <div class="form-group lang-en">
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+              </div>
+              <!-- Arabic -->
+              <div class="form-group lang-ar d-none">
+                <input type="email" name="email" class="form-control" placeholder="البريد الإلكتروني" required="required">
+              </div>
+            </div>
+            <!-- English -->
+            <div class="form-group lang-en">
+              <input type="number" name="mobile-number" class="form-control" placeholder="Mobile Number" required="required">
+            </div>
+            <!-- Arabic -->
+            <div class="form-group lang-ar d-none">
+              <input type="number" name="mobile-number" class="form-control" placeholder="رقم الهاتف" required="required">
+            </div>
+            <div class="mb-3">
+              <!-- English -->
+              <div class="lang-en">
+                <h5>Where did you hear about us?</h5>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="facebook" id="facebook">
+                  </div>
+                  <div class="col">Facebook</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="linkedIn" id="linkedIn">
+                  </div>
+                  <div class="col">LinkedIn</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="referral" id="referral">
+                  </div>
+                  <div class="col">Referral</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="google" id="google">
+                  </div>
+                  <div class="col">Google/Search Engine</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="other" id="other">
+                  </div>
+                  <div class="col">Other (please specify)</div>
+                </div>
+              </div>
+              <!-- Arabic -->
+              <div class="lang-ar d-none">
+                <h4>أين سمعت عنا؟</h4>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="facebook" id="facebook">
+                  </div>
+                  <div class="col">الفيسبوك</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="linkedIn" id="linkedIn">
+                  </div>
+                  <div class="col">لينكدين</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="referral" id="referral">
+                  </div>
+                  <div class="col">الإحالة</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="google" id="google">
+                  </div>
+                  <div class="col">جوجل / محرك البحث</div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <input type="checkbox" name="reputation" value="other" id="other">
+                  </div>
+                  <div class="col">غير ذلك (يرجى التحديد)</div>
+                </div>
+              </div>
+            </div>
+            <!-- English -->
+            <div class="form-group lang-en">
+              <textarea name="comment" id="comment" class="form-control"
+                        rows="4" placeholder="Your Comment" required="required"></textarea>
+            </div>
+            <!-- Arabic -->
+            <div class="form-group lang-ar d-none">
+              <textarea name="comment" id="comment" class="form-control"
+                        rows="4" placeholder="تعليقك" required="required"></textarea>
+            </div>
+            <!-- English -->
+            <div class="modal-footer px-0 lang-en">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn-send-2">Send Now</button>
+            </div>
+            <!-- Arabic -->
+            <div class="modal-footer px-0 lang-ar d-none">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">إغلاق</button>
+              <button type="button" class="btn-send-2">ارسل الاّن</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Jquery-->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!--Boostrap-Jquery-->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!--Wow-Jquery-->
+  <script type="text/javascript" src="js/wow.js"></script>
+  <!--Main-Scripts-->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script>
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+    accordionItemHeaders.forEach(accordionItemHeader => {
+      accordionItemHeader.addEventListener("click", event => {
+        accordionItemHeader.classList.toggle("active");
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        if (accordionItemHeader.classList.contains("active")) {
+          accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+        }
+        else {
+          accordionItemBody.style.maxHeight = 0;
+        }
+
+      });
+    });
+  </script>
+</body>
+</html>
